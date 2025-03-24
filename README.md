@@ -12,8 +12,7 @@ This project simulates real-time monitoring of customers' heart beat rates using
 ```
 heartbeat-project/
 ├── docker-compose.yml
-├── producer.py
-├── consumer.py
+├── requirements.txt
 ├── scripts/
 │   ├── consumer.py
 │   └── producer.py
