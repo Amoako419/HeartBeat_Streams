@@ -14,11 +14,20 @@ heartbeat-project/
 ├── docker-compose.yml
 ├── producer.py
 ├── consumer.py
-├── db_schema.sql
 ├── scripts/
 │   ├── consumer.py
 │   └── producer.py
 └── README.md
+```
+
+## Database Schema
+```sql
+CREATE TABLE heartbeats (
+    id SERIAL PRIMARY KEY,
+    customer_id INTEGER NOT NULL,
+    heartbeat INTEGER NOT NULL,
+    timestamp TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+);
 ```
 
 ## How to Run
