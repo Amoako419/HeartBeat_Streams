@@ -38,9 +38,8 @@ CREATE TABLE heartbeats (
 3. Install dependencies: `pip install -r requirements.txt`
 4. Start services: `docker-compose up -d`
 5. Create Kafka topic: `kafka-topics --create --topic heartbeat-data --bootstrap-server localhost:9092`
-6. Set up DB using `db_schema.sql`
-7. Run `producer.py`: `python producer.py`
-8. Run `consumer.py`: `python consumer.py`
-9. Verify data in PostgreSQL.
+6. Run `producer.py`: `python producer.py`
+7. Run `consumer.py`: `python consumer.py`
+8. Verify data in PostgreSQL.
 
 Enjoy building your real-time data pipeline!
